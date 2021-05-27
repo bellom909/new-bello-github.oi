@@ -10,7 +10,7 @@ body {
 }
 
 h2{
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 h3{
@@ -341,49 +341,82 @@ font-weight: bold;
 }
 /* <!-======- Product Page -Style- Start Here -=====-> */
 .Contact_us_form{
-  width: 90%;
-  max-width: 900px;
+  width: 27%;
+  /* max-width: 400px; */
   height: auto;
-  background-color: #00BCEF;
+  background-color: #ffffff;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 30px;
+  border: 2px solid #00BCEF;
   box-sizing: border-box;
   text-align: center;
   margin-top: 40px;
+  box-shadow: 0px 6px 20px #2e2e2e28;
+  position: relative;
 }
+.Contact_us_form h1{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #00BCEF;
+}
+.Contact_us_form p{
+  font-weight: 550;
+
+}
+/* .up_style{
+  width: 100%;
+  max-width: 900px;
+  height: 50px;
+  background-color: #00BCEF;
+  border-radius: 3px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+display: grid;
+place-content: center;
+color: white;
+} */
 .Contact_us_form .form_row{
-  display:flex;
+  display:block;
   width: 100%;
  text-align: center;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .Contact_us_form .form_row_1 .input_content input{
+  font-size: 17px;
+
   width: 90%;
   height: 40px;
   border: none;
   background: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.986);
+  border-bottom: 2px solid #5d5d5d;
   outline: none;
   margin-top: 20px;
-  color: white;
+  color: #333333;
   outline: none;
+  padding: 0px 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 ::-webkit-input-placeholder{
-  color: rgba(255, 255, 255, 0.609);
+  color: #4d4d4d9d;
   opacity: 30px;
 }
 .Contact_us_form .form_row_2 .input_content input{
+  font-size: 17px;
   width: 90%;
   height: 40px;
   border: none;
   background: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.986);
+  border-bottom: 2px solid #333333;
   margin-top: 20px;
-  color: white;
+  color: #333333;
   outline: none;
+  padding: 0px 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .Contact_us_form .form_row_1{
   width: 100%;
@@ -397,9 +430,9 @@ font-weight: bold;
   height: 40px;
  background-color: unset;
   border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.986);
+  border-bottom: 2px solid #333;
   outline: none;
-  color: rgba(255, 255, 255, 0.589);
+  color: #4d4d4d98;
   padding: 0 10px;
   box-sizing: border-box;
   margin-top: 20px;
@@ -408,42 +441,47 @@ font-weight: bold;
  background-repeat: no-repeat;
  background-position: right 20px top 50%;
  background-size: 10px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  
 }
 .input_content option{
-  background-color: #00BCEF;
-  color: white;
+  background-color: #fdfdfd;
+  color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .Contact_us_form textarea{
   resize: none;
   margin-top: 60px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.109);
+  background-color: #0000000a;
   border: none;
   outline: none;
-  width: 100%;
+  width: 90%;
   padding: 10px;
-  color: #fff;
+  color: #3a3a3a;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .Contact_us_form button{
   padding: 7px 20px ;
   font-size: 17px;
   border-radius:20px;
   border: none;
-  background: #ffffff;
-  box-shadow: 0px 7px 10px #4444442a;
+  background: #6d6d6d;
+  box-shadow: 0px 4px 10px #4444442a;
   margin-top: 40px;
   transition: 0.5s all ease ;
 }
 .Contact_us_form button a{
-  color: #00BCEF;
-  text-decoration: none;
-}.Contact_us_form button a:hover{
-  color: #ffffff;
+color: #ffffff;
+text-decoration: none;
 }
+.Contact_us_form button a:hover{
+  color: #ffffff;
+  }
 .Contact_us_form button:hover{
   background: #01c4ff;
-  color: white;
 }
 @media screen and (max-width:768px){
   .Contact_us_form .form_row{
@@ -461,13 +499,14 @@ font-weight: bold;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  text-align: center;
  margin-bottom: 50px;
+ margin-top: 40px;
 }
 .contact_us_section h1{
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-top: 2rem;
 }
 .contact_us_section p{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 .contact_us_box{
