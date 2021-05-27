@@ -31,7 +31,11 @@
 <body>
 
   <!-- ======= Header ======= -->
-
+  <!-- Menu Title Here -->
+  <nav class="menu_title">
+    <p>Automation</p>
+</nav>
+  <!-- Menu Title End -->
   <nav class="navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -384,33 +388,41 @@
   <script src="assets/js/Read-More.js"></script>
   <!-- Our Aos Data -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 300,
-      duration: 800,
-    });
-  </script>
-  <script>
-    
-  function more (){
-    var dots=document.getElementById('dot');
-    var more=document.getElementById('read-more-text');
-    var btn=document.getElementById('read-more-btn');
+      <script>
+        AOS.init({
+          offset: 300,
+          duration: 800,
+        });
+      </script>
 
-   if (dot.style.display === "none"){
-    dot.style.display = "inline";
-    more.style.display = "none";
-    btn.innerHTML = "Read More";
+      <script>
+        window.addEventListener("scroll",function(){
+      var header=document.querySelector('nav');
+      header.classList.toggle("m_title",window.scrollY > 0);
+        });
+      </script>
 
-    } else{
-      dot.style.display = "none";
-    more.style.display = "inline";
-    btn.innerHTML = "Read Less";
+      <script>
+        
+      function more (){
+        var dots=document.getElementById('dot');
+        var more=document.getElementById('read-more-text');
+        var btn=document.getElementById('read-more-btn');
 
-    }
+      if (dot.style.display === "none"){
+        dot.style.display = "inline";
+        more.style.display = "none";
+        btn.innerHTML = "Read More";
 
-  }
-  </script>
+        } else{
+          dot.style.display = "none";
+        more.style.display = "inline";
+        btn.innerHTML = "Read Less";
+
+        }
+
+      }
+      </script>
 
 
 </body>
