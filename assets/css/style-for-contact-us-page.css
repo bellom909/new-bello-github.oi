@@ -341,8 +341,8 @@ font-weight: bold;
 }
 /* <!-======- Product Page -Style- Start Here -=====-> */
 .Contact_us_form{
-  max-width:470px ;
-  /* max-width: 400px; */
+  width:50%;
+  max-width: 800px;
   height: auto;
   background-color: #ffffff;
   margin: auto;
