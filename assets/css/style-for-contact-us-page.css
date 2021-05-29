@@ -72,6 +72,34 @@ h3{
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+/*============ Menu Title Nav=============== */
+.menu_title{
+  position: fixed;
+  text-align: center;
+  background-color: unset;
+  display: none;
+  z-index: 33222;
+}
+.menu_title p{
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin: 0;
+}
+.m_title{
+  margin-top: 60px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  width: 100vw;
+  height: 50px;
+  display: grid;
+  color: #00BCEF;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.185);
+  font-family: sans-serif;
+  place-items: center;
+  transition: 0.5s;
+}
+/*============ Menu Title Nav End =============== */
 .navbar{
   display: flex;
   position: fixed;
@@ -341,7 +369,7 @@ font-weight: bold;
 }
 /* <!-======- Product Page -Style- Start Here -=====-> */
 .Contact_us_form{
-  width:50%;
+  width: 50%;
   max-width: 800px;
   height: auto;
   background-color: #ffffff;
