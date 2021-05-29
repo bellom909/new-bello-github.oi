@@ -29,7 +29,9 @@
 <body>
 
   <!-- ======= Header ======= -->
-
+  <section class="menu_title">
+    <p>Home</p>
+  </section>
   <nav class="navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -556,6 +558,12 @@
       duration: 800,
     });
   </script>
+          <script>
+            window.addEventListener("scroll",function(){
+          var header=document.querySelector('section');
+          header.classList.toggle("m_title",window.scrollY > 0);
+            });
+          </script>
 <script>
   window.addEventListener("scroll",function(){
 var header=document.querySelector('nav');
