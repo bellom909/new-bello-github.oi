@@ -31,6 +31,11 @@
 
   <!-- ======= Header ======= -->
   <!-- Menu Title Here -->
+    
+  <header class="menu_title">
+    <p>Mechanical Engineering</p>
+  </header>
+
   <nav class="menu_title">
     <div class="menu_link" id="myDIV">
     <a href="Electrical Engineering-page.html" class="mt_btn ">Electrical Engineering</a>
@@ -406,6 +411,14 @@
         header.classList.toggle("m_title",window.scrollY > 0);
           });
         </script>
+        
+        <script>
+          window.addEventListener("scroll",function(){
+           var header=document.querySelector('header');
+           header.classList.toggle("m_mo_title",window.scrollY > 0);
+             });
+            </script>
+
   <script>
     
   function more (){

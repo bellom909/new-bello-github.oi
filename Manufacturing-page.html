@@ -31,6 +31,9 @@
 <body>
 
   <!-- ======= Header ======= -->
+  <header class="menu_title">
+    <p>Manufacturing</p>
+  </header>
   <nav class="menu_title">
     <div class="menu_link" id="myDIV">
     <a href="Manufacturing-page.html"    class="mt_btn mt_active">Manufacturing</a>
@@ -381,6 +384,12 @@
           header.classList.toggle("m_title",window.scrollY > 0);
             });
           </script>
+                      <script>
+              window.addEventListener("scroll",function(){
+               var header=document.querySelector('header');
+               header.classList.toggle("m_mo_title",window.scrollY > 0);
+                 });
+                </script>
 <script>
   // Add active class to the current button (highlight it)
   var header = document.getElementById("myDIV");
