@@ -31,9 +31,15 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <!-- Menu Title Here -->
   <nav class="menu_title">
-    <p>Manufacturing</p>
+    <div class="menu_link" id="myDIV">
+    <a href="Manufacturing-page.html"    class="mt_btn mt_active">Manufacturing</a>
+    <a href="Traffic-Control-page.html"  class="mt_btn">Traffic Control</a>
+    <a href="Mining-page.html"           class="mt_btn">Mining</a>
+    <a href="Construction-page.html"     class="mt_btn">Construction</a>
+    <a href="Home-Security-page.html"    class="mt_btn">Home Security & Automation</a>
+    <a href="Chemicals-page.html"         class="mt_btn">Chemicals</a>
+  </div>
 </nav>
   <!-- Menu Title End -->
   <nav class="navbar navbar-expand-lg navbar-light ">
@@ -148,7 +154,7 @@
           </div>
           <div class="col-md-5 order-md-1">
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/images/MF-img1.jpg" alt="">
-            <div class="video_box1" data-aos="zoom-in-up">
+            <div class="video_box1">
               <video  controls  poster="assets/video/MF-T-01.png" src="assets/video/M-video.mp4" type="video/mp4"></video>
             </div>
     
@@ -183,7 +189,7 @@
           </div>
           <div class="col-md-5">
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/images/MF-img2.jpg" alt="">
-            <div class="video_box2" data-aos="zoom-in-up">
+            <div class="video_box2">
               <video  controls  poster="assets/video/MF-T-02.png" src="assets/video/M-video.mp4" type="video/mp4"></video>
             </div>
           </div>
@@ -216,7 +222,7 @@
           </div>
           <div class="col-md-5 order-md-1">
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/images/MF-img3.jpg" alt="">
-            <div class="video_box1" data-aos="zoom-in-up">
+            <div class="video_box1">
               <video  controls  poster="assets/video/MF-T-03.png" src="assets/video/M-video.mp4" type="video/mp4"></video>
             </div>
     
@@ -251,7 +257,7 @@
           </div>
           <div class="col-md-5">
             <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/images/MF-img4.png" alt="">
-            <div class="video_box2" data-aos="zoom-in-up">
+            <div class="video_box2">
               <video  controls poster="assets/video/MF-T-04.png" src="assets/video/M-video.mp4" type="video/mp4"></video>
             </div>
           </div>
@@ -369,13 +375,24 @@
       duration: 800,
     });
   </script>
-        <script>
-          window.addEventListener("scroll",function(){
-        var header=document.querySelector('nav');
-        header.classList.toggle("m_title",window.scrollY > 0);
-          });
-        </script>
-
+          <script>
+            window.addEventListener("scroll",function(){
+          var header=document.querySelector('nav');
+          header.classList.toggle("m_title",window.scrollY > 0);
+            });
+          </script>
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("mt_btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("mt_active");
+    current[0].className = current[0].className.replace(" mt_active");
+    this.className += " mt_active";
+    });
+  }
+  </script>
 
 
 </body>

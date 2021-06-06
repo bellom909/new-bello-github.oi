@@ -9,14 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  color: #ef6603;
-}
 
-a:hover {
-  color: #fc8129;
-  text-decoration: none;
-}
 h2{
   font-size: 2.4rem;
   font-weight: bold;
@@ -80,7 +73,34 @@ h3{
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
+/*============ Menu Title Nav=============== */
+.menu_title{
+  position: fixed;
+  text-align: center;
+  background-color: unset;
+  display: none;
+  z-index: 33222;
+}
+.menu_title p{
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin: 0;
+}
+.m_title{
+  margin-top: 60px;
+  background-color: rgb(255, 255, 255);
+  display: block;
+  width: 100vw;
+  height: 50px;
+  display: grid;
+  color: #00BCEF;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.185);
+  font-family: sans-serif;
+  place-items: center;
+  transition: 0.5s;
+}
+/*============ Menu Title Nav End =============== */
 .navbar{
   display: flex;
   position: fixed;
@@ -359,24 +379,20 @@ font-weight: bold;
   padding-left: 30px;
   padding-right: 30px;
 }
-.lead{
-  margin-top: 30px;
-  font-weight: 400;
-  font-size: 17px;
+.ul-1{
+  margin-top: 40px;
   text-align: left;
-  overflow: hidden;
+  list-style: none;
+  line-height: 27px;
+  padding: 0;
+  font-weight: 600;
 }
-.col-md-7 strong{
-  color: #00BCEF;
-  font-size: 20px;
-}
-.col-md-7 .addr{
-  font-size: 20px;
-}
-.lead span{
-   color: #00BCEF;
-   text-decoration: underline;
-   cursor: pointer;
+.ul-1 li::before{
+content: '\2714';
+color: #00BCEF;
+margin-right: 10px;
+font-weight: bold;
+font-size: 20px;
 }
 .featurette-heading{
   font-size: 2rem;
@@ -384,6 +400,7 @@ font-weight: bold;
  color: #00BCEF;
 }
 .col-md-7{
+  text-align: center;
   padding-left: 50px;
 }
 .col-md-5{
@@ -391,8 +408,48 @@ font-weight: bold;
   align-items: center;
   justify-content: center;
 }
-
-
+.col-md-btn{
+  padding: 0.4rem 2rem;
+  font-size: 17px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: 2px solid #00BCEF;
+  color: #00BCEF;
+  font-weight: 500;
+  background: none;
+  transition: 0.3s all linear;
+}
+.col-md-btn:hover{
+  background:#00BCEF;
+  color: white;
+}
+.project-more-btn{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 80px auto;
+}
+.project-more-btn a{
+  padding: 0.4rem 2rem;
+  font-size: 17px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: 2px solid #00BCEF;
+  color: #00BCEF;
+  font-weight: 500;
+  background: none;
+  transition: 0.3s all linear;
+}
+.project-more-btn a:hover{
+  background:#00BCEF;
+  color: white;
+}
 @media screen and (max-width:990px){
   .bd-placeholder-img{
     height:auto;
@@ -553,6 +610,11 @@ transition: 0.5s;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+@media screen and (max-width:764px){
+  .copy_right_section p{
+font-size: 10px;
+  }
 }
 @media screen and (min-width:1920px){
   footer{

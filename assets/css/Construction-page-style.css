@@ -80,24 +80,42 @@ h3{
   display: none;
   z-index: 33222;
 }
-.menu_title p{
+.mt_btn{
+  color: #1b1501;
+}
+.menu_link{
+margin: auto;
+}
+.mt_active{
+  color: #00BCEF;
+}
+.menu_title a{
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 18px;
-  margin: 0;
+  padding: 0px 15px;
+  cursor: pointer;
+  text-decoration: none;
+
 }
+.menu_title a:hover{
+  color: #00BCEF;
+}
+
+
 .m_title{
+  box-sizing: border-box;
   margin-top: 60px;
   background-color: rgb(255, 255, 255);
-  display: block;
   width: 100vw;
   height: 50px;
-  display: grid;
-  color: #00BCEF;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.185);
   font-family: sans-serif;
-  place-items: center;
   transition: 0.5s;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+
 }
 /*============ Menu Title Nav End =============== */
 .navbar{

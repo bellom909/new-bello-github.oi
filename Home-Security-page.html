@@ -31,9 +31,16 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <!-- Menu Title Here -->
+  <!-- ======= Header ======= -->
   <nav class="menu_title">
-    <p>Home Security & Automation</p>
+    <div class="menu_link" id="myDIV">
+    <a href="Manufacturing-page.html" class="mt_btn ">Manufacturing</a>
+    <a href="Traffic-Control-page.html"  class="mt_btn">Traffic Control</a>
+    <a href="Mining-page.html" class="mt_btn">Mining</a>
+    <a href="Construction-page.html" class="mt_btn">Construction</a>
+    <a href="Home-Security-page.html" class="mt_btn mt_active">Home Security & Automation</a>
+    <a href="Chemicals-page.html" class="mt_btn">Chemicals</a>
+  </div>
 </nav>
   <!-- Menu Title End -->
   <nav class="navbar navbar-expand-lg navbar-light ">
@@ -375,7 +382,18 @@
       header.classList.toggle("m_title",window.scrollY > 0);
         });
       </script>
-
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("mt_btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("mt_active");
+    current[0].className = current[0].className.replace(" mt_active");
+    this.className += " mt_active";
+    });
+  }
+  </script>
 
 </body>
 

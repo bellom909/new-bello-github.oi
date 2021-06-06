@@ -33,7 +33,14 @@
   <!-- ======= Header ======= -->
   <!-- Menu Title Here -->
   <nav class="menu_title">
-    <p>Electrical Engineering</p>
+    <div class="menu_link" id="myDIV">
+    <a href="Electrical Engineering-page.html" class="mt_btn mt_active">Electrical Engineering</a>
+    <a href="Mechanical-Engineering-page.html"  class="mt_btn">Mechanical Engineering</a>
+    <a href="Automation-page.html" class="mt_btn">Automation</a>
+    <a href="Robotics-page.html" class="mt_btn">Robotics</a>
+    <a href="Iot-page.html" class="mt_btn">Iot</a>
+    
+  </div>
 </nav>
   <!-- Menu Title End -->
   <nav class="navbar navbar-expand-lg navbar-light ">
@@ -421,7 +428,18 @@
 
   }
   </script>
-
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("mt_btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("mt_active");
+    current[0].className = current[0].className.replace(" mt_active");
+    this.className += " mt_active";
+    });
+  }
+  </script>
 
 </body>
 
