@@ -261,7 +261,6 @@ margin: 0 13px;
   transition: 0.4s all ease;
   }
   .navbar-collapse{
-
     flex-grow: 0;
   }
  
@@ -523,223 +522,186 @@ text-decoration: none;
   }
 }
 /* <!-- address_section_start --> */
-.address_section{
-  text-align: center;
-}
-.address_section h2{
-  margin-top: 30px;
-}
-/* country name section */
-section{
-	position: relative;
-	margin: 30px auto 0;
-  width: 30%;
-	min-width: 500px;
-	height: 50px;
-	background: #fdfdfd;
-	border: 2px solid #00BCEF;
-	border-radius: 8px;
-	font-size: 0;
-	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+.nav-tabs{
+  margin: 20px auto !important;
   display: flex;
+  width: 200px !important;
+  border: 2px solid #01c4ff !important;
+  border-radius: 4px;
+  display: flex;
+  justify-content:space-between;
 }
-section a{
-	font-size: 15px;
-	font-weight: 800;
-	text-transform: uppercase;
-	color: rgb(65, 65, 65);
-	text-decoration: none;
-	line-height: 50px;
-	position: relative;
-	z-index: 1;
-	display: inline-block;
-	text-align: center;
+.nav-tabs li a{
+  color: #2e2e2e !important;
 }
-section .animation{
-	position: absolute;
-	height: 100%;
-	/* height: 5px; */
-	top: 0;
-	/* bottom: 0; */
-	z-index: 0;
-	background: #00BCEF;
-	border-radius: 4px;
-	transition: all .5s ease 0s;
+.nav-tabs .nav-link{
+  margin-bottom: 0px !important;
 }
-section a:hover{
-	transition: all .5s ease 0s;
-  text-decoration: none;
-  cursor: pointer;
-  color: unset;
+.nav-tabs .nav-link::before{
+ height: 0px;
+ width: 0px;
 }
-.c_active{
-background: #00BCEF;
-border-radius: 2px ;
-height: 100%;
-color: white;
+.nav-tabs .dropdown-menu{
+margin-top: 10px;
 }
-section a:nth-child(1){
-flex: 1;
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #00BCEF;
 }
-section a:nth-child(2){
-	flex: 1;
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  background: #00BCEF !important;
+  color: white !important;
 }
-
-section a:nth-child(3){
-  flex: 1;
-}
-
-section a:nth-child(4){
-  flex: 1;
-}
-
-/* <!-- address_section_start --> */
-.all_contact_us_div{
-	background: transparent;
-	height: 483px;
-  overflow: hidden;
-}
-.contact_us_section{
+.contact_us_section {
   width: 100vw;
   height: auto;
- overflow: hidden;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- text-align: center;
- margin-bottom: 50px;
- margin-top: 40px;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.contact_us_section h1{
-  font-size: 2rem;
+.contact_us_section h1 {
+  font-size: 2.4rem;
   margin-top: 2rem;
 }
-.contact_us_section p{
-  font-size: 1.2rem;
+.contact_us_section p {
+  font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-.contact_us_box{
+.contact_us_box {
   width: 60%;
   height: 400px;
   margin: auto;
-  border-radius:10px;
+  border-radius: 10px;
   box-sizing: border-box;
-  background-color: #00BCEF;
+  background-color: #00bcef;
   box-shadow: 0px 7px 27px rgba(0, 0, 0, 0.116);
   display: flex;
   flex-wrap: wrap;
   color: white;
-  overflow:hidden;
+  overflow: hidden;
+  /* optional */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
 }
-.location_part{
+.location_part {
   flex: 50%;
-  background: #00BCEF;
+  background: #00bcef;
   min-width: 250px;
- min-height: 250px;
+  min-height: 250px;
 }
-.location_part iframe{
-width: 100%;
-height: 100%;
-
+.location_part iframe {
+  width: 100%;
+  height: 100%;
 }
 
-.form_part{
+.form_part {
   min-width: 250px;
   flex: 50%;
-  background-color: #00BCEF;
+  background-color: #00bcef;
   text-align: center;
   padding: 1rem;
   box-sizing: border-box;
-  border-radius:10px;
+  border-radius: 10px;
 }
-.form_part h1{
+.form_part h1 {
   margin-top: 0.8rem;
   font-size: 1.7rem;
+  font-weight: bold;
 }
-.form_part p{
+.form_part p {
   font-size: 15px;
 }
 
-.address{
+.address {
   text-align: left;
   margin-top: 2.8rem;
 }
-.address h2{
-font-size: 1rem;
-margin-bottom: 0.5rem;
+.address h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
-.open_date{
+.open_date {
   text-align: left;
   margin-top: 1.9rem;
 }
-.open_date p{
+.open_date p {
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
-.open_date p::after{
-  content: '>';
+.open_date p::after {
+  content: ">";
 }
-.address_button{
+.address_button {
   padding: 0.4rem 1.2rem;
   border-radius: 25px;
   border: none;
-  color: #00BCEF;
+  color: #00bcef;
   background: #ffffff;
-  box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.13),5px -10px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.13),
+    5px -10px 15px rgba(0, 0, 0, 0.15);
   margin-top: 2.5rem;
   cursor: pointer;
   margin-bottom: 1rem;
   outline: none;
 }
-@media only screen and (min-width: 1920px){
-  .contact_us_box{
-      width: 1140px;
-
+@media only screen and (min-width: 1920px) {
+  .contact_us_box {
+    width: 1140px;
   }
 }
-@media only screen and (max-width: 1024px){
-  .contact_us_box{
+@media only screen and (max-width: 1024px) {
+  .contact_us_box {
     width: 80%;
-    
-    
   }
 }
-@media only screen and (max-width: 768px){
-
-  .contact_us_box{
+@media only screen and (max-width: 768px) {
+  .nav-tabs .dropdown-menu{
+    background-color: white;
+    transition: 0.5s;
+  }
+  .contact_us_box {
     width: 90%;
     height: auto;
   }
-  .open_date{
-      margin-top: 1rem;
+  .open_date {
+    margin-top: 1rem;
   }
-  .address h2{
-      font-size: 1.2rem;
+  .address h2 {
+    font-size: 1.2rem;
   }
-  .form_part h1{
-      font-size: 1.5rem;
+  .form_part h1 {
+    font-size: 1.5rem;
   }
-  .contact_us_section h1{
-      font-size: 2rem;
+  .contact_us_section h1 {
+    font-size: 2rem;
   }
-  .contact_us_section p{
-      font-size: 1rem;
+  .contact_us_section p {
+    font-size: 1rem;
   }
-  .form_part p{
-      font-size: 1rem;
-  }
-  #myDIV{
-    min-width: 95%;
+  .form_part p {
+    font-size: 1rem;
   }
 }
-@media only screen and (max-width: 414px){
-  .contact_us_box{
+@media only screen and (max-width: 414px) {
+  .contact_us_box {
     width: auto;
     margin: 0 1rem;
     height: auto;
-
-      
   }
-
 }
+/* <!-- address_section_End --> */
+
+.nav-tabs {
+  border: 1px solid #07cdff;
+  background-color: #ffffff;
+  color: #00bcef;
+  align-items: center;
+  width: 300px;
+  margin: auto;
+}
+
 /* <!-- address_section_End --> */
 /*================== Foter -Style- Start =========================*/
 footer{
